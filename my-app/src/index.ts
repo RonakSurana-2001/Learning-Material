@@ -9,7 +9,13 @@ export default {
 		if(request.method==="GET")
 		{
 			return Response.json({
-				message:"you send a request"
+				message:"you send a get request"
+			});
+		}
+		if(request.method==="POST")
+		{
+			return Response.json({
+				message:"you send a post request"
 			});
 		}
 		else{
